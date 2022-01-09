@@ -1,8 +1,66 @@
 // static initial creation of tables
-export const CREATE_TABLES = `CREATE TYPE "BASE_DIV" AS ENUM (
+
+/**
+ * @typedef {Object} Book
+ * @property {Number} id
+ * @property {Number} created_at
+ * @property {Number} modified_at
+ *
+ * @property {Boolean} isPrimary
+ * @property {String} name
+ *
+ */
+/**
+ * @typedef {Object} Currency
+ * @property {Number} id
+ * @property {Number} created_at
+ * @property {Number} modified_at
+ *
+ * @property {BASE_DIV} baseDiv
+ * @property {String} code
+ *
+ */
+/**
+ * @typedef {Object} Source
+ * @property {Number} id
+ * @property {Number} created_at
+ * @property {Number} modified_at
+ *
+ * @property {connection_type} connectionType
+ * @property {String} name
+ * @property {Object} details
+ *
+ */
+/**
+ * @typedef {Object} Entity
+ * @property {Number} id
+ * @property {Number} created_at
+ * @property {Number} modified_at
+ *
+ * @property {Boolean} isPrimary
+ * @property {String} name
+ * @property {Object} details
+ * @property {entity_type} entityType
+ * @property {Number} parent
+ *
+ */
+/**
+ * @typedef {Object} account_type
+ * @property {Number} id
+ * @property {Number} created_at
+ * @property {Number} modified_at
+ *
+ * @property {Boolean} isExternal
+ * @property {String} name
+ * @property {Object} details
+ *
+ */
+
+export const CREATE_TABLES_QUERY = `CREATE TYPE "BASE_DIV" AS ENUM (
   '100',
   '1'
 );
+
 
 CREATE TYPE "connection_type" AS ENUM (
   'import',
