@@ -93,6 +93,9 @@ CREATE TABLE "BOOK" (
   "modified_at" timestamp
 );
 
+INSERT INTO BOOK (id,name,isPrimary)
+VALUES (1,"primary",TRUE);
+
 CREATE TABLE "CURRENCY" (
   "id" SERIAL UNIQUE PRIMARY KEY NOT NULL,
   "code" varchar(100),
@@ -100,6 +103,8 @@ CREATE TABLE "CURRENCY" (
   "created_at" timestamp NOT NULL DEFAULT (now()),
   "modified_at" timestamp NOT NULL
 );
+INSERT INTO CURRENCY (id,code,baseDiv)
+VALUES (1,"USD",100);
 
 CREATE TABLE "Source" (
   "id" SERIAL UNIQUE PRIMARY KEY NOT NULL,
