@@ -1,0 +1,23 @@
+{
+  "name": "pf_sys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robert-brown96/pf_sys.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robert-brown96/pf_sys/issues"
+  },
+  "homepage": "https://github.com/robert-brown96/pf_sys#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "prettier": "^2.5.1"
+  }
+}
