@@ -232,3 +232,5 @@ CREATE INDEX "account_index" ON "transaction_line" ("account");
 `;
 
 // runner function
+
+const createInitialTables = async () => {};
