@@ -1,3 +1,5 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // static initial creation of tables
 
 /**
@@ -56,7 +58,7 @@
  *
  */
 
-export const CREATE_TABLES_QUERY = `CREATE TYPE "BASE_DIV" AS ENUM (
+const CREATE_TABLES_QUERY = `CREATE TYPE "BASE_DIV" AS ENUM (
   '100',
   '1'
 );
@@ -228,3 +230,5 @@ CREATE INDEX "created_at_index" ON "transaction_line" ("created_at");
 
 CREATE INDEX "account_index" ON "transaction_line" ("account");
 `;
+
+// runner function

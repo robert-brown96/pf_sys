@@ -19,7 +19,9 @@
   "dependencies": {
     "express": "^4.17.2",
     "knex": "^0.95.15",
+    "pg": "^8.7.1",
     "prettier": "^2.5.1",
+    "rambda": "^7.0.1",
     "sequelize": "^6.12.5"
   },
   "type": "module"
