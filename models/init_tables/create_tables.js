@@ -1,5 +1,60 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+// enum definitions
+/**
+ * @typedef {Number} BASE_DIV
+ */
+/**
+ * @enum {BASE_DIV}
+ * @readonly
+ */
+const BASE_DIV = {
+    STANDARD: 100,
+    ZERO: 0
+};
+
+/**
+ * @typedef {String} connection_type
+ */
+/**
+ * @enum {connection_type}
+ * @readonly
+ */
+const CONNECTION_TYPE = {
+    IMPORT: "import",
+    API: "api",
+    SCHEDULED: "scheduled",
+    AUTO: "auto",
+    MANUAL: "manual"
+};
+
+/**
+ * @typedef {String} entity_type
+ */
+/**
+ * @enum {entity_type}
+ * @readonly
+ */
+const ENTITY_TYPE = {
+    INCOME: "income",
+    VENDOR: "vendor",
+    EXPENSESOURCE: "expenseSource"
+};
+
+/**
+ * @typedef {String} class_type
+ */
+/**
+ * @enum {class_type}
+ * @readonly
+ */
+const CLASS_TYPE = {
+    STANDARD: "standard",
+    RECURRING: "recurring",
+    LONG_TERM: "long_term",
+    UNPLANNED: "unplanned"
+};
+
 // static initial creation of tables
 
 /**
