@@ -113,7 +113,7 @@ const CLASS_TYPE = {
  *
  */
 
-const CREATE_TABLES_QUERY = `CREATE TYPE "BASE_DIV" AS ENUM (
+const CREATE_ENUMS_QUERY = `CREATE TYPE "BASE_DIV" AS ENUM (
   '100',
   '1'
 );
@@ -138,7 +138,9 @@ CREATE TYPE "class_type" AS ENUM (
   'recurring',
   'long_term',
   'unplanned'
-);
+);`;
+
+const CREATE_TABLES_QUERY = `
 
 CREATE TABLE "BOOK" (
   "id" SERIAL UNIQUE PRIMARY KEY NOT NULL,
@@ -290,7 +292,3 @@ CREATE INDEX "created_at_index" ON "transaction_line" ("created_at");
 
 CREATE INDEX "account_index" ON "transaction_line" ("account");
 `;
-
-// runner function
-
-const createInitialTables = async () => {};
